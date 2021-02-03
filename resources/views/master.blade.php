@@ -17,10 +17,10 @@
    <body>
         <div>
             <header class="header row">
-                <div class="logo col-sm-7 text-right">
-                    <h1>Nameday</h1>
+                <div class="logo col-12 col-lg-7 text-lg-right">
+                    <a href=""><h1>Nameday</h1></a>
                 </div>
-                <nav class="menu col-sm-5 text-right">
+                <nav class="menu col-12 col-lg-5 text-lg-right">
                     <a href="">Home</a>
                     <input class="search" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 

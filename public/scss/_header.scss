@@ -2,6 +2,10 @@
     margin-top: 25px;
     font-family: $font-family;
 }
+.logo a{
+    color: $color-text;
+    text-decoration: none;
+}
 .logo h1{
     font-family: $font-family-logo;
     font-size: 90px;
