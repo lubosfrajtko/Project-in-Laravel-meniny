@@ -1,12 +1,12 @@
 
-$font-family: 'Nunito';
-$font-family-logo: 'Mrs Saint Delafield', cursive;
+$font-family: 'Mrs Saint Delafield', cursive;
+$font-family-logo: 'Miss Fajardose', cursive;
 
 $color-text: #222;
 $color-text-nav: white;
 $color-header: #dcd1d3;
-$color-bg: #dcd1d3;
-$color-bg-footer: darken(#dcd1d3, 10%);
+$color-bg: lighten(#dcd1d3, 5%);
+$color-bg-footer: darken(#dcd1d3, 20%);
 $color-footer: #8c95ad;;
 $color-links: darken(#E85A4F, 10%);
 $color-introduction: darken(#E85A4F, 20%);
@@ -14,7 +14,7 @@ $color: #E98074;
 $color-sel: #FCBD24;
 
 
-$width-sm: 600px;
-$width-md: 800px;
-$width-lg: 1000px;
-$width-el: 1200px;
+$width-sm: 576px;
+$width-md: 768px;
+$width-lg: 992px;
+$width-el: 1200px,;
