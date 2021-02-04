@@ -13,10 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('main');
-});
+Route::get('/', 'App\Http\Controllers\PagesController@index');
 
-Route::get('/name', function () {
-    return view('name');
-});
+Route::resource('name','App\Http\Controllers\NameController', ['except' => 'edit', 'create']);
+

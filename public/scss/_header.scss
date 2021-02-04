@@ -21,36 +21,52 @@
     color: $color-text;
     margin-right: 40px;
 }
-
-#myInput {
+form{
     display: inline-block;
+}
+#myInput {
     font-size: 30px; /* Increase font-size */
     background: $color-bg;
     border: none;
-    margin-right: 30px;
+    color: lighten($color-text, 20%);
   }
+
+#myInput {
+    border: none;
+    outline: none;
+}
   
 #myInput:hover{
     border: none;
 }  
-  #myUL {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-  }
-  
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
+form button{
+    border: none;
+    background: $color-bg;
+    font-size: 22px;
+    margin-left: -10px;
+}
+
+  @media(max-width: 1000px)
+{
+    #myInput{
+        margin-right: 30px;
+    }
+}
+
+.autocomplete-items {
+  position: absolute;
+  border-bottom: 1px solid $color-text;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 60%;
+  font-size: 25px;
+  text-align: center;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background: lighten($color-bg, 10%);
+  width: 200px;
+  right: 15%;
+}
